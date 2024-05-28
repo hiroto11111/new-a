@@ -1,17 +1,133 @@
-button {
-    margin: 5px 0 5px 0;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 25px;
-    border: 2px solid #ffff22;
-    background-color: #FFF;
-    box-sizing: border-box;
-    color: #FF5722;
-    cursor: pointer;
+.header1 {
+    background: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
 }
 
-button:hover {
-    background-color: #30a548;
-    color: #FFF;
-    transition: all 1s ease 0s;
+@keyframes scroll-anim {
+    0% {
+        opacity: 0;
+        translate: 0 -20px;
+    }
+    10% {
+        opacity: 0;
+        translate: 0 -20px;
+    }
+    20% {
+        opacity: 1;
+        translate: 0 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header2 {
+    opacity: 0;
+    animation: scroll-anim linear;
+    animation-timeline: scroll();
+}
+
+.header2 {
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 60;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.5rem;
+    position: sticky;
+    top: 10px;
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+  
+main {
+    padding: 1rem 0;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.images1 img {
+    width: 600px;
+    height: 450px;
+}
+
+.images2 img {
+    width: 600px;
+    height: 450px;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sns img{
+    width: 30px;
+    height: 30px;
+    background: #333;
+}
+
+#btn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    cursor:pointer;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
 }
