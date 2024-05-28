@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSで遊んでみよう</title>
-    <link rel="stylesheet" href="/index.css">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="button_wrap">
-        <button id="myButton">クリック</button>
-    </div>
-    <script src ="/main.js"></script>
+    <header class="header1">
+        <h1>自己紹介</h1>
+    </header>
+    <header class="header2">
+        <h1>自己紹介</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>プロフィール</h2>
+            <p>名前: 西岡大仁</p>
+            <p>年齢: 19</p>
+            <p>所属学部・学科: 工学部情報工学科</p>
+        </section>
+        <section id="career">
+            <h2>経歴</h2>
+            <ul>
+                <li>[経歴1]</li>
+                <li>[経歴2]</li>
+                <li>[経歴3]</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2>趣味</h2>
+            <ul class="sort">
+            <p><font size="6">valorant</font></p>
+            <p><font size="6">スノーボード</font></p>
+            </ul>
+            <ul class="sort">
+                <p class="images1">
+                    <img src="img/スクリーンショット 2023-12-16 193143.png" alt="valorant">
+                </p>
+                <p class="images2">
+                    <img src="img/IMG_2492.jpg" alt="スノボ">
+                </p>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>python</li>
+                <li>java</li>
+                <li>c</li>
+                <li>kotlin</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NISHIOKA</p>
+        <ul class="sns">
+            <li><a href="https://x.com/gm893_" target="_blank"><img src="./img/logo-white.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/panpianoatelier?igsh=MW5oeXR4ZjBocThycw==" target="_blank"><img src="./img/Instagram_Glyph_White.png" alt="Instagram"></a></li>
+        </ul>
+        <button type="button" id="btn">トップへ</button>   
+    </footer>
+    <script src="main.js"></script>
 </body>
-
 </html>
